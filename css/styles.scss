@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700|Muli:400,300);
+
+
+// variables
+$roboto:'Roboto', sans-serif;
+$muli: 'Muli', sans-serif;
+
+
+
+// home
+.cont01{
+  width: 100%;
+  height: 1024px;
+  background: url(../img/bg-home.png);
+  color: #FFFFFF;
+
+  h1{
+    font-family: $muli;
+    font-size: 72px;
+    line-height: 79px;
+    font-weight: 100;
+    margin: 0 auto;
+    text-align: center;
+  }
+  h2{
+    height: 95px;
+    width: 800px;
+    font-size: 70px;
+    font-family: $roboto;
+    background: rgba(255, 255, 255, 0.1);
+    font-weight: 100;
+    margin: auto;
+    text-align: center;
+  }
+}
