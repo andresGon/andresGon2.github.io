@@ -2721,22 +2721,83 @@ th {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
+/* Float */
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px); }
+
+/* Shrink */
+.hvr-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform; }
+
+.hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9); }
+
+header {
+  display: none;
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  -webkit-box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.1); }
+  header .header {
+    width: 1024px;
+    height: 100%;
+    margin: auto; }
+    header .header .logo {
+      width: 224px;
+      height: 45px;
+      background: url(../img/logo.svg);
+      margin-top: 20px; }
+
 .cont01 {
   width: 100%;
-  min-height: 800px;
-  height: 100%;
+  height: 800px;
   background: url(../img/bg-home.png);
   color: #FFFFFF; }
   .cont01 .container {
-    padding-top: 20%; }
+    padding-top: 15%; }
   .cont01 h1 {
     font-family: "Roboto", sans-serif;
     font-size: 72px;
     line-height: 79px;
     font-weight: lighter;
     margin: 0 auto;
-    text-align: center; }
+    text-align: center;
+    display: none; }
   .cont01 h2 {
+    display: none;
     height: 75px;
     width: 527px;
     font-size: 50px;
@@ -2772,7 +2833,22 @@ th {
     color: #fff;
     text-decoration: none;
     margin-top: 10px;
-    opacity: .6; }
+    opacity: .6;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+    -webkit-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
     .homeNav a:hover {
       opacity: 1; }
   .homeNav .sep {
@@ -2786,3 +2862,23 @@ th {
     -webkit-transform: skewX(-10deg);
     /* Safari */
     transform: skewX(-10deg); }
+
+.wrapNavHome {
+  display: none; }
+
+.downButton {
+  display: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image: url(../img/btnDown.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 8% auto 0; }
+  .downButton:hover {
+    background-color: rgba(255, 255, 255, 0.3); }
+
+.cont02 {
+  width: 100%;
+  height: 800px; }
