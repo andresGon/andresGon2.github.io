@@ -88,8 +88,25 @@ $(document).ready(function() {
             }, 400);
         });
 
-// hover iconos
+// modales
 
+    $('.btnCloseModal').click(function(event) {
+      $('.modal01, .modal02, .modal03').animate({'left': '-100%'}, 300);
+      $('html').css('overflow', 'scroll');
+    });
+
+    $('.proyecto01').click(function() {
+      $('.modal01').animate({'left': '0%'}, 300);
+      $('html').css('overflow', 'hidden');
+    });
+    $('.proyecto02').click(function() {
+      $('.modal02').animate({'left': '0%'}, 300);
+      $('html').css('overflow', 'hidden');
+    });
+    $('.proyecto03').click(function() {
+      $('.modal03').animate({'left': '0%'}, 300);
+      $('html').css('overflow', 'hidden');
+    });
 
 
 });
