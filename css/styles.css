@@ -3063,7 +3063,7 @@ header {
 
 .cont03 {
   width: 100%;
-  height: 720px;
+  height: 740px;
   padding-top: 100px;
   position: relative; }
   .cont03 .container {
@@ -3264,3 +3264,10 @@ header {
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center; }
+
+.cont04 {
+  width: 100%;
+  height: 720px;
+  padding-top: 100px;
+  position: relative;
+  background-image: url(../img/bg-acerca.png); }

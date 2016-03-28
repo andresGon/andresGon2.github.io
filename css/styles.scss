@@ -248,7 +248,7 @@ $jose: 'Josefin Slab', serif;
 // ======================================== contenedor 3 =================================
 .cont03{
   width: 100%;
-  height: 720px;
+  height: 740px;
   padding-top: 100px;
   position: relative;
   .container{
@@ -449,4 +449,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#faba2d', end
   z-index: 120;
   @include flexbox;
   @include align-items(center);
+}
+// ======================================== contenedor 4 =================================
+.cont04{
+  width: 100%;
+  height: 720px;
+  padding-top: 100px;
+  position: relative;
+  background-image: url(../img/bg-acerca.png);
 }
