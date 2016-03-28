@@ -71,7 +71,7 @@ var fullheight = $(window).height();
 
 
 $(document).ready(function() {
-	$(".cont01, .cont04").height(fullheight);
+	$(".cont01").height(fullheight);
 });
 
 $(window).resize(function() {
@@ -86,7 +86,7 @@ $(window).resize(function() {
 
 function doneResizing() {
 	//Ejecuta lo que sea despues de cambiar tamaño del navegador
-	$(".cont01, .cont04").height(fullheight);
+	$(".cont01").height(fullheight);
 }
 
 // scroll down animacion
@@ -112,11 +112,11 @@ function doneResizing() {
               setTimeout("$('h2').show()", 1000);
               setTimeout("$('.wrapNavHome').show()", 1500);
               //setTimeout("$('.downButton').css('display', 'block').addClass('animated fadeInUp')", 2500);
-              $('.footerCont').css('display', 'none').removeClass('animated bounceInUp');
+
             }
             // animacion iconos
             //if($(this).scrollTop() > 800){
-            if( divScroll == "hab" ||  $(this).scrollTop() > fullheight ){
+            if( divScroll == "hab" ||  $(this).scrollTop() > fullheight || $(this).scrollTop() > 800 ){
               $('.wrapIcon img').css('display','block');
               $('.wrapIcon').eq(0).find('img').addClass('animated rotateInDownLeft');
               $('.wrapIcon').eq(1).find('img').addClass('animated rotateIn');
@@ -125,7 +125,6 @@ function doneResizing() {
               $('.btnHab').addClass('active');
               $('.btnPro, .btnAce').removeClass('active');
               $('.btnTop').css('display', 'block');
-              $('.footerCont').css('display', 'none').removeClass('animated bounceInUp');
             }
 
             if(  divScroll == "pro" || $(this).scrollTop() >fullheight + 650 ){
@@ -136,11 +135,10 @@ function doneResizing() {
             if(  divScroll == "ace" || $(this).scrollTop() >fullheight + 1390 ){
               $('.btnAce').addClass('active');
               $('.btnHab, .btnPro').removeClass('active');
-              $('.footerCont').css('display', 'block').addClass('animated bounceInUp');
             }
 
             else{
-                    $('.wrapIcon img').fadeOut(800);
+                    //$('.wrapIcon img').fadeOut(800);
             }
 
         });
