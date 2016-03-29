@@ -147,7 +147,7 @@ function doneResizing() {
 // modales
 
     $('.btnCloseModal').click(function(event) {
-      $('.modal01, .modal02, .modal03').animate({'left': '-100%'}, 300);
+      $('.modal01, .modal02, .modal03, .modal04, .modal05, .modal06').animate({'left': '-100%'}, 300);
       $('html').css('overflow', 'scroll');
     });
 
@@ -161,6 +161,18 @@ function doneResizing() {
     });
     $('.proyecto03').click(function() {
       $('.modal03').animate({'left': '0%'}, 300);
+      $('html').css('overflow', 'hidden');
+    });
+    $('.btn04').eq(0).click(function() {
+      $('.modal04').animate({'left': '0%'}, 300);
+      $('html').css('overflow', 'hidden');
+    });
+    $('.btn04').eq(1).click(function() {
+      $('.modal05').animate({'left': '0%'}, 300);
+      $('html').css('overflow', 'hidden');
+    });
+    $('.btn04').eq(2).click(function() {
+      $('.modal06').animate({'left': '0%'}, 300);
       $('html').css('overflow', 'hidden');
     });
 

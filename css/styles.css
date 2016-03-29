@@ -3291,7 +3291,7 @@ header {
     .wrapModal .linkModal:hover {
       opacity: .7; }
 
-.modal01, .modal02, .modal03 {
+.modal01, .modal02, .modal03, .modal04, .modal05, .modal06 {
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.95);
@@ -3344,3 +3344,8 @@ header {
     font-family: "Roboto", sans-serif;
     text-align: center;
     line-height: 120px; }
+
+.expColum {
+  width: 50%;
+  text-align: center;
+  margin: auto; }
