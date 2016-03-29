@@ -3256,7 +3256,8 @@ header {
     font-weight: 100;
     opacity: .6; }
   .wrapModal .columTxt {
-    padding: 0 3%; }
+    padding: 0 3%;
+    width: 100%; }
   .wrapModal .linkModal {
     display: inline-block;
     width: 100%;
