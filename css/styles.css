@@ -3089,8 +3089,7 @@ header {
           margin: 0; }
         .cont02 .container .wrapColum .colum img {
           margin: auto;
-          display: block;
-          display: none; }
+          display: block; }
         .cont02 .container .wrapColum .colum .wrapIcon {
           height: 120px; }
         .cont02 .container .wrapColum .colum:nth-of-type(1) {

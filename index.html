@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/scrollMe.js"></script>
   <!-- <link rel="stylesheet" href="/css/reset.css" media="screen" title="no title" charset="utf-8"> -->
 </head>
 <body>
@@ -29,7 +30,7 @@
   <!-- ========================= btn top ================================== -->
     <div class="btnTop"></div>
   <!-- ======================== contenedor 1 ============================== -->
-  <div class="cont01">
+  <div class="cont01 scrollme">
     <div class="container">
       <h1 class="animated bounceInDown">Andrés González</h1>
       <h2 class="animated flipInY">Frontend Web Designer</h2>
@@ -50,9 +51,9 @@
 
   <!-- ======================== contenedor 2 ============================== -->
 
-  <div class="cont02">
+  <div class="cont02 scrollme" >
     <div class="container">
-      <section>
+      <section class="animateme" data-when="enter" data-from="1" data-to="0" data-opacity="0" data-translatex="-360" >
         <img src="img/habilidades.png" alt="Andrés González - Habilidades">
         <article class="textSkills">
           <p>Hola, Soy <b>Andrés Mauricio Gonzalez</b>, tengo 31 años de edad, y
@@ -72,14 +73,14 @@
       <div class="wrapColum">
         <div class="colum">
             <div class="wrapIcon">
-              <img src="../img/icon-design.svg" alt="Diseño Web">
+              <img src="../img/icon-design.svg" alt="Diseño Web" class="animateme" data-when="enter" data-from="1.5" data-to="0" data-opacity="0"  data-rotatey="0" data-rotatex="" data-rotatez="360">
             </div>
           <h3>Diseño Web</h3>
           <p>He realizado procesos de diseño orientados al ámbito web, desde el primer paso de estos procesos he tomado en cuenta el desarrollo web. </p>
         </div>
         <div class="colum">
             <div class="wrapIcon">
-              <img src="../img/icon-html.svg" alt="Html - css">
+              <img src="../img/icon-html.svg" class="animateme" alt="Html - css" data-when="enter" data-from="1.5" data-to="0" data-opacity="0"  data-rotatey="0" data-rotatex="360" data-rotatez="0">
             </div>
           <h3>Html - Css</h3>
           <p>Un buen proceso de diseño web garantiza un mejor desarrollo html y css, prestando la mayor atención a los detalles que definirán la personalidad del producto.     </p>
