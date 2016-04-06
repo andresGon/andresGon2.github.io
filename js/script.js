@@ -140,7 +140,7 @@ function doneResizing() {
 // modales
 
     $('.btnCloseModal').click(function(event) {
-      $('.modal01, .modal02, .modal03, .modal04, .modal05, .modal06').animate({'left': '-100%'}, 300);
+      $('.modal01, .modal02, .modal03, .modal04, .modal05, .modal06, .modalContacto').animate({'left': '-100%'}, 300);
       $('html').css('overflow', 'scroll');
     });
 
@@ -166,6 +166,11 @@ function doneResizing() {
     });
     $('.btn04').eq(2).click(function() {
       $('.modal06').animate({'left': '0%'}, 300);
+      $('html').css('overflow', 'hidden');
+    });
+    $('.homeCon, .btnCon').click(function() {
+            event.preventDefault();
+      $('.modalContacto').animate({'left': '0%'}, 300);
       $('html').css('overflow', 'hidden');
     });
 

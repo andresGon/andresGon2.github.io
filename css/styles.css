@@ -2943,6 +2943,7 @@ header {
 
 .cont01 {
   width: 100%;
+  overflow: hidden;
   height: 800px;
   background: url(../img/bg-home.png);
   color: #FFFFFF;
@@ -3291,7 +3292,7 @@ header {
     .wrapModal .linkModal:hover {
       opacity: .7; }
 
-.modal01, .modal02, .modal03, .modal04, .modal05, .modal06 {
+.modal01, .modal02, .modal03, .modal04, .modal05, .modal06, .modalContacto {
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.95);
@@ -3349,3 +3350,25 @@ header {
   width: 50%;
   text-align: center;
   margin: auto; }
+
+.contacto input {
+  width: 100%;
+  height: 30px;
+  padding: 5px 10px;
+  margin: 10px auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: "Muli", sans-serif;
+  color: rgba(0, 0, 0, 0.8); }
+  .contacto input:focus {
+    border-color: blue;
+    box-shadow: none; }
+
+.contacto textarea {
+  width: 50%;
+  height: 200px;
+  padding: 5px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: "Muli", sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  float: left;
+  resize: none; }
