@@ -91,18 +91,16 @@ function doneResizing() {
 
 // // scroll down animacion
 //
-//         $(window).scroll(function(){
-//
-//
-//
-//             if ($(this).scrollTop() > 400) {
-//                 //$('header').fadeIn(500);
-//                 $('header').show().addClass('animated bounceInDown');
-//                 $('.btnTop').css('display', 'none');
-//
-//             } else {
-//                 $('header').fadeOut(500);
-//             }
+          $(window).scroll(function(){
+
+            if ($(this).scrollTop() > 400) {
+                //$('header').fadeIn(500);
+                $('header').show().addClass('animated bounceInDown');
+                $('.btnTop').css('display', 'none');
+
+            } else {
+                $('header').fadeOut(500);
+            }
 //
 //             // animacion home
 //            // if ($(this).scrollTop() === 0){
@@ -141,7 +139,7 @@ function doneResizing() {
 //                     //$('.wrapIcon img').fadeOut(800);
 //             }
 //
-//         });
+    });
 
 
 // modales
