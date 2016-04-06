@@ -7,6 +7,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <script type="text/javascript" src="js/scrollMe.js"></script>
+  <link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>
   <!-- <link rel="stylesheet" href="/css/reset.css" media="screen" title="no title" charset="utf-8"> -->
 </head>
 <body>
@@ -31,7 +32,7 @@
     <div class="btnTop"></div>
   <!-- ======================== contenedor 1 ============================== -->
   <div class="cont01 scrollme">
-    <div class="container">
+    <div class="container animateme" data-when="exit" data-from="0" data-to="0.5" data-opacity="0" data-scale="2">
       <h1 class="animated bounceInDown">Andrés González</h1>
       <h2 class="animated flipInY">Frontend Web Designer</h2>
       <nav class="wrapNavHome">
@@ -73,7 +74,7 @@
       <div class="wrapColum">
         <div class="colum">
             <div class="wrapIcon">
-              <img src="../img/icon-design.svg" alt="Diseño Web" class="animateme" data-when="enter" data-from="0" data-to="1" data-opacity="1"  data-rotatey="0" data-rotatex="" data-rotatez="360">
+              <img src="../img/icon-design.svg" alt="Diseño Web" class="animateme" data-when="exit" data-from="0" data-to="0.5" data-opacity="0"  data-rotatey="0" data-rotatex="" data-rotatez="360">
             </div>
           <h3>Diseño Web</h3>
           <p class="animateme" data-when="span" data-from="1" data-to="0" data-translatex="-180">
@@ -82,7 +83,7 @@
         </div>
         <div class="colum">
             <div class="wrapIcon">
-              <img src="../img/icon-html.svg" class="animateme" data-when="enter" data-from="0" data-to="1"  data-rotatey="0" data-rotatex="" data-rotatez="-360">
+              <img src="../img/icon-html.svg" class="animateme" data-when="exit" data-from="0" data-to="0.5"  data-opacity="0"   data-rotatey="0" data-rotatex="" data-rotatez="-360">
             </div>
           <h3>Html - Css</h3>
           <p class="animateme" data-when="span" data-from="1" data-to="0" data-translatex="0" data-translatey="180">
@@ -90,7 +91,7 @@
           </div>
         <div class="colum">
             <div class="wrapIcon">
-              <img src="../img/icon-js.svg" alt="Javascript - Git" class="animateme" data-when="enter" data-from="0" data-to="1"  data-rotatey="0" data-rotatex="" data-rotatez="360">
+              <img src="../img/icon-js.svg" alt="Javascript - Git" class="animateme" data-when="exit" data-from="0" data-to="0.5"  data-opacity="0"  data-rotatey="0" data-rotatex="" data-rotatez="360">
             </div>
           <h3>JavaScript - Git</h3>
           <p class="animateme" data-when="span" data-from="1" data-to="0" data-translatex="180">
@@ -102,13 +103,13 @@
   </div>
 
     <!-- ======================== contenedor 3 ============================== -->
-<div class="cont03">
+<div class="cont03 scrollme">
   <div class="container">
     <h4>Proyectos <span>Realizados</span></h4>
     <div class="sepPro"></div>
-    <div class="wrapPro centerPro">
+    <div class="wrapPro centerPro ">
 
-      <div class="animateme proyecto proyecto01 "  data-when="enter" data-from="0" data-to="0" data-translatex="0" data-translatey="180">
+      <div class="proyecto proyecto01 animateme" data-when="enter" data-from="1" data-to="0" data-opacity="0" data-translatex="-360">
         <img src="../img/books.png" alt="Books and Books">
         <div class="proyectoHover">
           <h5>Books and Books</h5>
@@ -121,7 +122,7 @@
         </div>
       </div>
 
-      <div class="proyecto proyecto02">
+      <div class="proyecto proyecto02 animateme" data-when="enter" data-from="1" data-to="0" data-opacity="0" data-translatex="360">
         <img src="../img/caribe.png" alt="Gas Caribe">
         <div class="proyectoHover">
           <h5>Gas Caribe</h5>
@@ -139,7 +140,7 @@
 
     <div class="wrapPro">
 
-      <div class="proyecto proyecto03">
+      <div class="proyecto proyecto03 animateme"   data-when="enter" data-from="1" data-to="0" data-opacity="0" data-translatex="360">
         <img src="../img/cartillas.png" alt="Cartillas Digitales">
         <div class="proyectoHover">
           <h5>Cartillas Digitales</h5>
@@ -226,12 +227,12 @@
 
 
 </div>
-<div class="cont04">
+<div class="cont04 scrollme">
   <div class="container">
           <div class="wrapBtn04">
-                        <div class="btn04 hvr-sweep-to-top">Experiencia Laboral</div>
-                        <div class="btn04 hvr-sweep-to-top">Formación Académica</div>
-                        <div class="btn04 hvr-sweep-to-top">Datos Personales</div>
+                        <div class="btn04 hvr-sweep-to-top animateme"  data-when="span" data-from="1" data-to="0" data-opacity="0" data-scale="2" >Experiencia Laboral</div>
+                        <div class="btn04 hvr-sweep-to-top animateme" data-when="span" data-from="1" data-to="0" data-opacity="0" data-scale="2">Formación Académica</div>
+                        <div class="btn04 hvr-sweep-to-top animateme" data-when="span" data-from="1" data-to="0" data-opacity="0" data-scale="2">Datos Personales</div>
           </div>
           <!-- <div class="footerCont">
                   <p>
@@ -306,10 +307,10 @@
                     <h5 style="font-size:29px">Andrés Mauricio González</h5>
                     <br><br><br>
                     <h5>Tel: 301 384 05 56</h5>
+                    <h6>Email: miroenlared@gmail.com</h6>
+                     <div class="sep"></div>
+                     <a href="https://github.com/andresGon" target="_blank"> https://github.com/andresGon </a>
 
-                    <div class="sep"></div>
-
-                    <h5>Email: miroenlared@gmail.com</h5>
 
 
 
