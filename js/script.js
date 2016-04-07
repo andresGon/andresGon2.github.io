@@ -32,7 +32,7 @@ $(document).ready(function() {
                   console.log( divScroll );
             $('html, body').animate({
                  scrollTop: $(".cont01 ").offset().top
-         }, 2000);
+         }, 3000);
           });
 
 

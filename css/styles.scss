@@ -545,3 +545,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#faba2d', end
                 }
         }
 }
+
+// ============================= texto Gracias ============================
+.txtTks{
+        text-align: center;
+        color: #fff;
+        font-family: $muli;
+        font-size: 20px;
+        text-decoration: none;
+        display: block;
+        position: absolute;
+        top: 55%;
+        width: 100%;
+        font-weight: 700;
+        -webkit-transition: all 300ms ease-in-out;
+        -moz-transition: all 300ms ease-in-out;
+        -ms-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
+        &:hover{
+                font-size: 22px;
+        }
+}

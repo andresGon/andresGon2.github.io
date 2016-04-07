@@ -3390,3 +3390,22 @@ header {
   transition: all 300ms ease; }
   .contacto .enviar:hover {
     background: #0D7DDC; }
+
+.txtTks {
+  text-align: center;
+  color: #fff;
+  font-family: "Muli", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  top: 55%;
+  width: 100%;
+  font-weight: 700;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out; }
+  .txtTks:hover {
+    font-size: 22px; }
