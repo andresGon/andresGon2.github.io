@@ -20,6 +20,7 @@ header{
         background: #000;
         .wrapSec01{
                 width: 1440px;
+                height: 740px;
                 margin: auto;
                 color: #fff;
                 clear: both;
@@ -28,7 +29,7 @@ header{
                         text-align: center;
                         text-transform: uppercase;
                         font-weight: 800;
-                        font-size: 69px;
+                        font-size: 101px;
                         span{
                                 width: 360px;
                                 height: 24px;
@@ -36,6 +37,23 @@ header{
                                 display: block;
                                 margin: 5px auto;
                         }
+                }
+                p{
+                        text-align: center;
+                        font-size: 30px;
+                        font-weight: 600;
+                }
+                a{
+                        display: block;
+                        color: #FD0057;
+                        border: 1px solid #FD0057;
+                        border-radius: 25px;
+                        padding: 5px 15px;
+                        margin: auto;
+                        font-size: 16px;
+                        text-decoration: none;
+                        width: 100px;
+                        text-align: center;
                 }
         }
 }

@@ -2869,6 +2869,7 @@ header {
   background: #000; }
   .sec01 .wrapSec01 {
     width: 1440px;
+    height: 740px;
     margin: auto;
     color: #fff;
     clear: both; }
@@ -2877,10 +2878,25 @@ header {
       text-align: center;
       text-transform: uppercase;
       font-weight: 800;
-      font-size: 69px; }
+      font-size: 101px; }
       .sec01 .wrapSec01 h1 span {
         width: 360px;
         height: 24px;
         background: url(../img/titSvg.svg);
         display: block;
         margin: 5px auto; }
+    .sec01 .wrapSec01 p {
+      text-align: center;
+      font-size: 30px;
+      font-weight: 600; }
+    .sec01 .wrapSec01 a {
+      display: block;
+      color: #FD0057;
+      border: 1px solid #FD0057;
+      border-radius: 25px;
+      padding: 5px 15px;
+      margin: auto;
+      font-size: 16px;
+      text-decoration: none;
+      width: 100px;
+      text-align: center; }
