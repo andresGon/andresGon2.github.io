@@ -1,5 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800);
 
+@font-face {
+    font-family: 'olivierregular';
+    src: url('olivier-webfont.eot');
+    src: url('olivier-webfont.eot?#iefix') format('embedded-opentype'),
+         url('olivier-webfont.woff2') format('woff2'),
+         url('olivier-webfont.woff') format('woff'),
+         url('olivier-webfont.ttf') format('truetype'),
+         url('olivier-webfont.svg#olivierregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 @import "reset";
 @import "flex";
 @import "animate";
@@ -8,19 +21,48 @@
 
 // variables
 $open:  'Open Sans', sans-serif;
+$oliver: 'olivierregular';
 
 // ======================================== header =======================================
 body{
         font-family: $open;
 }
 header{
-        display: none;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        nav{
+          width: 1140px;
+          height: 40px;
+          margin: auto;
+          a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 20px 10px;
+            display: inline-block;
+            &:hover{
+              text-decoration: underline;
+            }
+            &:last-of-type{
+              float: right;
+              border: 1px solid #fff;
+              padding: 5px 30px;
+              border-radius: 25px;
+            }
+          }
+        }
 }
+// =============================================== section 01 ====================================
 .sec01{
-        background: #000;
+        width: 1440px;
+        height: 740px;
+        background: url(../img/bgSec01.png);
+        background-position: center;
+        background-size: cover;
         .wrapSec01{
-                width: 1440px;
-                height: 740px;
+                width: 100%;
+                height: 100%;
                 margin: auto;
                 color: #fff;
                 clear: both;
@@ -30,12 +72,14 @@ header{
                         text-transform: uppercase;
                         font-weight: 800;
                         font-size: 101px;
+                        padding-top: 150px;
+                        line-height: 95px;
                         span{
                                 width: 360px;
                                 height: 24px;
                                 background: url(../img/titSvg.svg);
                                 display: block;
-                                margin: 5px auto;
+                                margin:auto;
                         }
                 }
                 p{
@@ -56,4 +100,45 @@ header{
                         text-align: center;
                 }
         }
+}
+
+// =============================================== section 02 ====================================
+
+
+
+.sec02{
+  width: 1440px;
+  height: 630px;
+  background: url(../img/bgSec02.png);
+  background-position: center;
+  background-size: cover;
+  @include flexbox;
+  @include justify-content(center);
+  @include  align-items(center);
+  .btnPlay{
+    width: 150px;
+    height: 150px;
+    background: url(../img/btnPlay.svg);
+    cursor: pointer;
+  }
+}
+// =============================================== section 03 ====================================
+
+.sec03{
+  width: 1440px;
+  height: 790px;
+  background-color: #232323;
+  background-image: url(../img/bgSlider1.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  h2{
+    font-family: $oliver;
+    color: #fff;
+    margin: auto;
+    font-size: 60px;
+    text-align: center;
+    display: block;
+    clear: both;
+    padding: 100px 0 0 0;
+  }
 }
