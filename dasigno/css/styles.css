@@ -2976,3 +2976,17 @@ header {
     display: block;
     clear: both;
     padding: 100px 0 0 0; }
+
+.sec04 {
+  width: 1440px;
+  height: 770px;
+  background-image: url(../img/bgSec04.png); }
+  .sec04 h3 {
+    font-family: "olivierregular";
+    color: #fff;
+    margin: auto;
+    font-size: 60px;
+    text-align: center;
+    display: block;
+    clear: both;
+    padding: 100px 0 0 0; }
