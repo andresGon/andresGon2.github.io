@@ -142,6 +142,83 @@ header{
     padding: 100px 0 0 0;
   }
 }
+.wrapSlide1{
+  width: 900px;
+  height: 500px;
+  margin: auto;
+  position: relative;
+  .unslider{
+    ul{
+      li{
+        width: 900px !important;
+        height: 500px;
+        img{
+          float: left;
+        }
+        p{
+          float: right;
+          color: #fff;
+          width: 40%;
+          text-align: right;
+          padding-top: 150px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .unslider-nav{
+    color: #fff;
+    margin-top: 30px;
+    ol{
+      text-align: center;
+      li{
+        display: inline-block;
+        color: #fff;
+        font-size: 25px;
+        font-family: $oliver;
+        margin: 10px 20px;
+        &:hover{
+          color:#F94F72;
+          cursor: pointer;
+        }
+
+      }
+      .unslider-active{
+        color:#F94F72;
+      }
+
+    }
+
+  }
+
+  .unslider-arrow{
+    width: 29px;
+    width: 29px;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+  }
+  .next{
+    background-image: url(../img/next.svg);
+    right: -60px !important;
+    top: 200px;
+  }
+  .prev{
+    background-image: url(../img/prev.svg);
+    left: -50px !important;
+    top: 200px;
+  }
+
+  .lineBottom{
+    position: absolute;
+    width: 183px;
+    height: 3px;
+    background: #fff;
+    bottom: -20px;
+    left: 340px;
+  }
+
+}
 // =============================================== section 03 ====================================
 .sec04{
   width: 1440px;
