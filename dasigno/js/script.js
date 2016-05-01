@@ -2,6 +2,7 @@
   jQuery(document).ready(function($) {
     $('.sli-Lessons').unslider();
     $('.my-slider2').unslider();
+    $('.my-slider3').unslider();
   });
 
 $(document).ready(function() {
