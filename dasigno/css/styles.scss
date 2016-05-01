@@ -49,17 +49,32 @@ header{
             font-size: 16px;
             margin: 20px 10px;
             display: inline-block;
+            @include tran(300ms);
             &:hover{
               text-decoration: underline;
+              color:#FD0057;
             }
             &:last-of-type{
               float: right;
               border: 1px solid #fff;
               padding: 5px 30px;
               border-radius: 25px;
+              @include tran(300ms);
+              &:hover{
+                color:#fff;
+                background: #FD0057;
+                border: 1px solid #FD0057;
+                text-decoration: none;
+              }
             }
           }
         }
+}
+.fixHeader{
+  position: fixed !important;
+  top: 0;
+  background: rgba(0, 0, 0, .5);
+  z-index: 500;
 }
 // =============================================== section 01 ====================================
 .sec01{
@@ -106,6 +121,12 @@ header{
                         text-decoration: none;
                         width: 100px;
                         text-align: center;
+                        @include tran(300ms);
+                        &:hover{
+                          background: #fff;
+                          color: #FD0057;
+                          border: .1px solid #fff;
+                        }
                 }
         }
 }
@@ -128,6 +149,28 @@ header{
     height: 150px;
     background: url(../img/btnPlay.svg);
     cursor: pointer;
+    @include tran(300ms);
+    &:hover{
+      opacity: .8;
+    }
+  }
+  .wrapVideo{
+    display: none;
+    position: relative;
+    @include tran(300ms);
+  }
+  .close{
+    width: 30px;
+    height: 30px;
+    background: url(../img/close.svg);
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    cursor: pointer;
+    @include tran(300ms);
+    &:hover{
+      opacity: .8;
+    }
   }
 }
 // =============================================== section 03 ====================================
@@ -318,6 +361,11 @@ header{
             font-weight: 800;
             border-radius: 25px;
             font-size: 18px;
+            @include tran(300ms)
+            &:hover{
+              background: #FE03BD;
+              color: #fff;
+            }
           }
         }
       }
@@ -403,7 +451,11 @@ header{
           }
         }
       }
+      .unslider-active{
+        background: #555;
+      }
     }
+
   }
 }
 // =============================================== section 06 ====================================
