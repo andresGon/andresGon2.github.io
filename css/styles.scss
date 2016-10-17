@@ -1,0 +1,569 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700|Muli:400,300);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:400,100,300,700);
+
+@import "reset";
+@import "flex";
+@import "animate";
+@import "hoverSel";
+
+
+// variables
+$roboto:'Roboto', sans-serif;
+$muli: 'Muli', sans-serif;
+$jose: 'Josefin Slab', serif;
+
+// ======================================== header =======================================
+  header{
+    display: none;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    -webkit-box-shadow: 0 2px 1px 1px rgba(0,0,0,.1);
+    box-shadow: 0 2px 1px 1px rgba(0,0,0,.1);
+
+    .header{
+      width: 1024px;
+      height: 100%;
+      margin: auto;
+      @include flexbox;
+      @include justify-content(space-around);
+      .logo{
+        width: 224px;
+        height: 45px;
+        background: url(../img/logo.svg);
+        margin-top: 20px;
+      }
+      .navHeader{
+        @include flexbox;
+        @include justify-content(space-between);
+        @include align-items(center)
+        margin-top: 25px;
+        a{
+          text-decoration: none;
+          font-family: $muli;
+          font-size: 18px;
+          color: #747474;
+          display: inline-block;
+          &:hover{
+            color: #033763;
+          }
+        }
+        .sep{
+          height: 30px;
+          width: 1px;
+          margin: 0 10px;
+          background: #D8D8D8;
+          -ms-transform: skewX(-10deg); /* IE 9 */
+          -webkit-transform: skewX(-10deg); /* Safari */
+          transform: skewX(-10deg)
+        }
+      }
+    }
+  }
+.active{
+  color: #033763 !important;
+  font-weight: bolder;
+}
+.btnTop{
+  display: none;
+  background-color: #043864;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  position: fixed;
+  top: 20%;
+  left: 2%;
+  z-index: 110;
+  cursor: pointer;
+  background-image: url(../img/btnTop.svg);
+}
+// ======================================== contenedor 1 =================================
+.cont01{
+  width: 100%;
+  overflow: hidden;
+  height: 800px;
+  background: url(../img/bg-home.png);
+  color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  .container{
+    padding-top: 15%;
+  }
+  h1{
+    font-family: $roboto;
+    font-size: 72px;
+    line-height: 79px;
+    font-weight: lighter;
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+  }
+  h2{
+    display: none;
+    height: 75px;
+    width: 527px;
+    font-size: 50px;
+    line-height: 75px;
+    font-family: $jose;
+    font-weight: lighter;
+    margin: auto;
+    text-align: center;
+    background: rgba(246, 167, 0, 0.9);
+    color:rgba(255, 255, 255, 0.9);
+  }
+  nav{
+    margin-top: 10%;
+  }
+}
+.homeNav{
+  margin: auto;
+  width: 527px;
+  @include flexbox;
+  @include justify-content(space-between);
+  a{
+    list-style: none;
+    font-family: $roboto;
+    font-weight: 400;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    opacity: .6;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+    -webkit-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+
+
+     -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+     -ms-animation-iteration-count: infinite;
+     -o-animation-iteration-count: infinite;
+     animation-iteration-count: infinite;
+    &:hover{
+      opacity: 1;
+    }
+  }
+  .sep{
+    width: 1px;
+    height: 40px;
+    margin: 0 25px;
+    background: rgba(255, 255, 255, 0.5);
+    vertical-align: middle;
+    -ms-transform: skewX(-10deg); /* IE 9 */
+    -webkit-transform: skewX(-10deg); /* Safari */
+    transform: skewX(-10deg)
+  }
+}
+.wrapNavHome{
+  display: none;
+}
+.downButton{
+  display: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, .2);
+  background-image: url(../img/btnDown.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 8% auto 0;
+
+  &:hover{
+    background-color: rgba(255, 255, 255, .3);
+  }
+}
+// ======================================== contenedor 2 =================================
+.cont02{
+  width: 100%;
+  height: 650px;
+  padding-top: 160px;
+  .container{
+    width: 1024px;
+    height: 100%;
+    margin: auto;
+    section{
+      @include flexbox;
+      @include justify-content(space-between);
+      img{
+        width: 358px;
+        height: 219px;
+      }
+      article{
+        width: 60%;
+      }
+    }
+
+    .wrapColum{
+      @include flexbox;
+      @include justify-content(space-between);
+      .colum{
+        width: 33%;
+        font-family: $muli;
+        font-size: 16px;
+        margin-top: 60px;
+        h3{
+          text-align: center;
+        }
+        p{
+          padding: 5% 15%;;
+          text-align: justify;
+          margin: 0;
+        }
+        img{
+          margin: auto;
+          display: block;
+        }
+        .wrapIcon{
+          height: 120px;
+        }
+        &:nth-of-type(1){
+          color: #E04300;
+          border-right: 1px solid rgba(0, 0, 0, .1);
+        }
+        &:nth-of-type(2){
+          color: #725600;
+          border-right: 1px solid rgba(0, 0, 0, .1);
+        }
+        &:nth-of-type(3){
+          color: #033763;
+        }
+      }
+    }
+  }
+  .textSkills{
+    font-family: $muli;
+    font-size: 16px;
+    color: #4B4B4B;
+  }
+}
+// ======================================== contenedor 3 =================================
+.cont03{
+  width: 100%;
+  height: 740px;
+  padding-top: 100px;
+  position: relative;
+  .container{
+    width: 1024px;
+    height: 100%;
+    margin: auto;
+    h4{
+      font-family: $muli;
+      font-size: 20px;
+      color: #033763;
+      font-weight: 100;
+      padding-left: 30px;
+      span{
+        color: #0D7DDC;
+      }
+    }
+    .sepPro{
+      width: 100%;
+      height: 1px;
+      background: rgba(0, 0, 0, .1);
+    }
+    .wrapPro{
+      margin-top: 30px;
+      &.centerPro{
+        @include flexbox;
+        @include justify-content(space-between);
+      }
+      .proyecto{
+        width: 450px;
+        height: 283px;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid rgba(0, 0, 0, .1);
+        cursor: pointer;
+        margin: auto;
+        .proyectoHover{
+          position: absolute;
+          bottom: -283px;
+          width: 100%;
+          height: 100%;
+          color: #fff;
+          -webkit-transition: all 300ms ease;
+        -moz-transition: all 300ms ease;
+        -ms-transition: all 300ms ease;
+        -o-transition: all 300ms ease;
+        transition: all 300ms ease;
+
+
+          /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#146a9c+0,126597+5,136797+6,126495+6,126291+12,105f8f+14,125f8d+17,0f5a88+21,0f5683+27,105883+28,0d4f79+38,0e4c77+43,0b4971+48,0d4972+49,0b476f+50,0d4971+51,0b476e+51,0d466e+53,0a446a+55,0b456c+56,0a4065+61,0b4167+62,093d63+65,0a3f63+66,093c62+67,052745+100&0.8+0,0.8+100 */
+          background: -moz-linear-gradient(top,  rgba(20,106,156,0.8) 0%, rgba(18,101,151,0.8) 5%, rgba(19,103,151,0.8) 6%, rgba(18,98,145,0.8) 12%, rgba(16,95,143,0.8) 14%, rgba(18,95,141,0.8) 17%, rgba(15,90,136,0.8) 21%, rgba(15,86,131,0.8) 27%, rgba(16,88,131,0.8) 28%, rgba(13,79,121,0.8) 38%, rgba(14,76,119,0.8) 43%, rgba(11,73,113,0.8) 48%, rgba(13,73,114,0.8) 49%, rgba(11,71,111,0.8) 50%, rgba(13,73,113,0.8) 51%, rgba(13,70,110,0.8) 53%, rgba(10,68,106,0.8) 55%, rgba(11,69,108,0.8) 56%, rgba(10,64,101,0.8) 61%, rgba(11,65,103,0.8) 62%, rgba(9,61,99,0.8) 65%, rgba(10,63,99,0.8) 66%, rgba(9,60,98,0.8) 67%, rgba(5,39,69,0.8) 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(top,  rgba(20,106,156,0.8) 0%,rgba(18,101,151,0.8) 5%,rgba(19,103,151,0.8) 6%,rgba(18,98,145,0.8) 12%,rgba(16,95,143,0.8) 14%,rgba(18,95,141,0.8) 17%,rgba(15,90,136,0.8) 21%,rgba(15,86,131,0.8) 27%,rgba(16,88,131,0.8) 28%,rgba(13,79,121,0.8) 38%,rgba(14,76,119,0.8) 43%,rgba(11,73,113,0.8) 48%,rgba(13,73,114,0.8) 49%,rgba(11,71,111,0.8) 50%,rgba(13,73,113,0.8) 51%,rgba(13,70,110,0.8) 53%,rgba(10,68,106,0.8) 55%,rgba(11,69,108,0.8) 56%,rgba(10,64,101,0.8) 61%,rgba(11,65,103,0.8) 62%,rgba(9,61,99,0.8) 65%,rgba(10,63,99,0.8) 66%,rgba(9,60,98,0.8) 67%,rgba(5,39,69,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to bottom,  rgba(20,106,156,0.8) 0%,rgba(18,101,151,0.8) 5%,rgba(19,103,151,0.8) 6%,rgba(18,98,145,0.8) 12%,rgba(16,95,143,0.8) 14%,rgba(18,95,141,0.8) 17%,rgba(15,90,136,0.8) 21%,rgba(15,86,131,0.8) 27%,rgba(16,88,131,0.8) 28%,rgba(13,79,121,0.8) 38%,rgba(14,76,119,0.8) 43%,rgba(11,73,113,0.8) 48%,rgba(13,73,114,0.8) 49%,rgba(11,71,111,0.8) 50%,rgba(13,73,113,0.8) 51%,rgba(13,70,110,0.8) 53%,rgba(10,68,106,0.8) 55%,rgba(11,69,108,0.8) 56%,rgba(10,64,101,0.8) 61%,rgba(11,65,103,0.8) 62%,rgba(9,61,99,0.8) 65%,rgba(10,63,99,0.8) 66%,rgba(9,60,98,0.8) 67%,rgba(5,39,69,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc146a9c', endColorstr='#cc052745',GradientType=0 ); /* IE6-9 */
+
+          h5{
+            font-family: $roboto;
+            font-size: 24px;
+            color: #FFFFFF;
+            margin: 20px 0 0 20px;
+          }
+          h6{
+            margin: 5px 0 0 20px;
+            font-family: $roboto;
+            font-size: 18px;
+            font-weight: 100;
+          }
+          p{
+            margin: 5px 0 0 20px;
+            font-family: $roboto;
+            font-size: 16px;
+            font-weight: 100;
+          }
+          .info{
+            text-align: center;
+            font-family: $roboto;
+            font-size: 14px;
+            margin-top: 110px;
+            span{
+              display: inline-block;
+              width: 16px;
+              height: 17px;
+              background: url(../img/lupa.svg);
+              vertical-align: middle;
+            }
+          }
+
+        }
+        &:hover{
+          .proyectoHover{
+            bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+// ======================================== modal =================================
+.wrapModal{
+  width: 970px;
+  height: auto;
+  margin: auto;
+  position: relative;
+  @include flexbox;
+  @include justify-content(space-between);
+  .btnCloseModal{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    top: 0;
+    right: 0;
+    background-color: #043864;
+    background-image: url(../img/close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    cursor: pointer;
+  }
+  h5{
+    font-family: $roboto;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 2px 0;
+    color: #4B4B4B;
+  }
+  h6{
+    font-family: $roboto;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 2px 0;
+    color: #4B4B4B;
+  }
+  h7{
+    font-family: $roboto;
+    font-size: 15px;
+    font-weight: 100;
+    margin: 2px 0;
+    color: #4B4B4B;
+  }
+  .sep{
+    width: 100%;
+    height: 1px;
+    margin: 10px 0;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  p{
+    font-family: $muli;
+    font-size: 16px;
+    color: #4B4B4B;
+    font-weight: 100;
+    opacity: .6;
+  }
+  .columTxt{
+    padding: 0 3%;
+    width: 100%;
+  }
+  .linkModal{
+    display: inline-block;
+    width: 100%;
+    height: 65px;
+    background-color: red;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 65px;
+    font-family: $roboto;
+    font-weight: 400;
+    margin-top: 10px;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#faba2d+0,f4a801+100 */
+background: rgb(250,186,45); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(250,186,45,1) 0%, rgba(244,168,1,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(250,186,45,1) 0%,rgba(244,168,1,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(250,186,45,1) 0%,rgba(244,168,1,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#faba2d', endColorstr='#f4a801',GradientType=0 ); /* IE6-9 */
+
+    span{
+      display: inline-block;
+      width: 8px;
+      height: 15px;
+      background: url(../img/link-modal.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      vertical-align: middle;
+    }
+    &:hover{
+      opacity: .7;
+    }
+  }
+}
+.modal01, .modal02, .modal03, .modal04, .modal05, .modal06, .modalContacto{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, .95);
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 120;
+  @include flexbox;
+  @include align-items(center);
+}
+// ======================================== contenedor 4 =================================
+.cont04{
+  width: 100%;
+  height: 720px;
+  padding-top: 120px;
+  position: relative;
+  background-image: url(../img/bg-acerca.png);
+  background-size: cover;
+ background-repeat: no-repeat;
+          .wrapBtn04{
+                width: 400px;
+                margin: auto;
+                .btn04{
+                        width: 398px;
+                        height: 78px;
+                        border: 1px solid #fff;
+                        text-align: center;
+                        color: #fff;
+                        margin-top: 60px;
+                        line-height: 78px;
+                        font-size: 20px;
+                        font-family: $roboto;
+                        font-weight: 400;
+                        cursor: pointer;
+                }
+          }
+          .footerCont{
+                  width: 100%;
+                  height: 120px;
+                  background: rgba(255, 255, 255, .9);
+                  color: #35C58F;
+                  position: absolute;
+                  bottom: 0;
+                  font-size: 25px;
+                  font-family: $roboto;
+                  text-align: center;
+                  line-height: 120px;
+          }
+}
+// ======================================= modal 04
+.expColum{
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+// ======================================= modal contacto ====================================
+
+.contacto{
+        input{
+                width: 100%;
+                height: 30px;
+                padding: 2px 10px;
+                margin: 4px auto;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                font-family: $muli;
+                color: rgba(0, 0, 0, .8);
+                &:focus{
+                        border-color: blue;
+                        box-shadow: none;
+                }
+        }
+        textarea{
+                width: 100%;
+                height: 100px;
+                padding: 2px 10px;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                font-family: $muli;
+                color: rgba(0, 0, 0, .8);
+                float: left;
+                resize: none;
+        }
+        .enviar{
+                width: 104.5%;
+                height: 30px;
+                text-align: center;
+                font-family: $muli;
+                font-weight: 700;
+                display: inline-block;
+                margin-top: 5px;
+                background: #033763;
+                color: #fff;
+                -webkit-transition: all 300ms ease;
+                -moz-transition: all 300ms ease;
+                -ms-transition: all 300ms ease;
+                -o-transition: all 300ms ease;
+                transition: all 300ms ease;
+                &:hover{
+                        background: #0D7DDC;
+                }
+        }
+}
+
+// ============================= texto Gracias ============================
+.txtTks{
+        text-align: center;
+        color: #fff;
+        font-family: $muli;
+        font-size: 20px;
+        text-decoration: none;
+        display: block;
+        position: absolute;
+        top: 55%;
+        width: 100%;
+        font-weight: 700;
+        -webkit-transition: all 300ms ease-in-out;
+        -moz-transition: all 300ms ease-in-out;
+        -ms-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
+        &:hover{
+                font-size: 22px;
+        }
+}

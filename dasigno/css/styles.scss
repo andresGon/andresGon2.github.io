@@ -1,0 +1,581 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800);
+
+@font-face {
+    font-family: 'olivierregular';
+    src: url('olivier-webfont.eot');
+    src: url('olivier-webfont.eot?#iefix') format('embedded-opentype'),
+         url('olivier-webfont.woff2') format('woff2'),
+         url('olivier-webfont.woff') format('woff'),
+         url('olivier-webfont.ttf') format('truetype'),
+         url('olivier-webfont.svg#olivierregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@mixin tran($sec) {
+  -webkit-transition: all $sec ease;
+  -moz-transition: all $sec ease;
+  -ms-transition: all $sec ease;
+  -o-transition: all $sec ease;
+  transition: all $sec ease;
+}
+
+@import "reset";
+@import "flex";
+@import "animate";
+@import "hoverSel";
+
+
+// variables
+$open:  'Open Sans', sans-serif;
+$oliver: 'olivierregular';
+
+// ======================================== header =======================================
+body{
+        font-family: $open;
+}
+header{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        nav{
+          width: 1140px;
+          height: 40px;
+          margin: auto;
+          a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 20px 10px;
+            display: inline-block;
+            @include tran(300ms);
+            &:hover{
+              text-decoration: underline;
+              color:#FD0057;
+            }
+            &:last-of-type{
+              float: right;
+              border: 1px solid #fff;
+              padding: 5px 30px;
+              border-radius: 25px;
+              @include tran(300ms);
+              &:hover{
+                color:#fff;
+                background: #FD0057;
+                border: 1px solid #FD0057;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+}
+.fixHeader{
+  position: fixed !important;
+  top: 0;
+  background: rgba(0, 0, 0, .5);
+  z-index: 500;
+}
+// =============================================== section 01 ====================================
+.sec01{
+        width: 1440px;
+        height: 740px;
+        background: url(../img/bgSec01.png);
+        background-position: center;
+        background-size: cover;
+        .wrapSec01{
+                width: 100%;
+                height: 100%;
+                margin: auto;
+                color: #fff;
+                clear: both;
+                h1{
+                        margin: auto 0;
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-weight: 800;
+                        font-size: 101px;
+                        padding-top: 150px;
+                        line-height: 95px;
+                        span{
+                                width: 360px;
+                                height: 24px;
+                                background: url(../img/titSvg.svg);
+                                display: block;
+                                margin:auto;
+                        }
+                }
+                p{
+                        text-align: center;
+                        font-size: 30px;
+                        font-weight: 600;
+                }
+                a{
+                        display: block;
+                        color: #FD0057;
+                        border: 1px solid #FD0057;
+                        border-radius: 25px;
+                        padding: 5px 15px;
+                        margin: auto;
+                        font-size: 16px;
+                        text-decoration: none;
+                        width: 100px;
+                        text-align: center;
+                        @include tran(300ms);
+                        &:hover{
+                          background: #fff;
+                          color: #FD0057;
+                          border: .1px solid #fff;
+                        }
+                }
+        }
+}
+
+// =============================================== section 02 ====================================
+
+
+
+.sec02{
+  width: 1440px;
+  height: 630px;
+  background: url(../img/bgSec02.png);
+  background-position: center;
+  background-size: cover;
+  @include flexbox;
+  @include justify-content(center);
+  @include  align-items(center);
+  .btnPlay{
+    width: 150px;
+    height: 150px;
+    background: url(../img/btnPlay.svg);
+    cursor: pointer;
+    @include tran(300ms);
+    &:hover{
+      opacity: .8;
+    }
+  }
+  .wrapVideo{
+    display: none;
+    position: relative;
+    @include tran(300ms);
+  }
+  .close{
+    width: 30px;
+    height: 30px;
+    background: url(../img/close.svg);
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    cursor: pointer;
+    @include tran(300ms);
+    &:hover{
+      opacity: .8;
+    }
+  }
+}
+// =============================================== section 03 ====================================
+
+.sec03{
+  width: 1440px;
+  height: 790px;
+  background-color: #232323;
+  background-image: url(../img/bgSlider1.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  h2{
+    font-family: $oliver;
+    color: #fff;
+    margin: auto;
+    font-size: 60px;
+    text-align: center;
+    display: block;
+    clear: both;
+    padding: 100px 0 0 0;
+  }
+}
+.wrapSlide1{
+  width: 900px;
+  height: 500px;
+  margin: auto;
+  position: relative;
+  .unslider{
+    ul{
+      li{
+        width: 900px !important;
+        height: 500px;
+        img{
+          float: left;
+        }
+        p{
+          float: right;
+          color: #fff;
+          width: 40%;
+          text-align: right;
+          padding-top: 150px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .unslider-nav{
+    color: #fff;
+    margin-top: 30px;
+    ol{
+      text-align: center;
+      li{
+        display: inline-block;
+        color: #fff;
+        font-size: 25px;
+        font-family: $oliver;
+        margin: 10px 20px;
+        &:hover{
+          color:#F94F72;
+          cursor: pointer;
+        }
+
+      }
+      .unslider-active{
+        color:#F94F72;
+      }
+
+    }
+
+  }
+
+  .unslider-arrow{
+    width: 29px;
+    width: 29px;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+  }
+  .next{
+    background-image: url(../img/next.svg);
+    right: -60px !important;
+    top: 200px;
+  }
+  .prev{
+    background-image: url(../img/prev.svg);
+    left: -50px !important;
+    top: 200px;
+  }
+
+  .lineBottom{
+    position: absolute;
+    width: 183px;
+    height: 3px;
+    background: #fff;
+    bottom: -20px;
+    left: 340px;
+  }
+
+}
+// =============================================== section 04 ====================================
+.sec04{
+  width: 1440px;
+  height: 770px;
+  background-image: url(../img/bgSec04.png);
+  h3{
+    font-family: $oliver;
+    color: #fff;
+    margin: 0 auto 20px;
+    font-size: 60px;
+    text-align: center;
+    display: block;
+    clear: both;
+    padding: 100px 0 0 0;
+  }
+}
+.wrapSlide2{
+  width: 945px;
+  height: 465px;
+  margin: auto;
+  .unslider{
+    ul{
+      li{
+        width: 945px;
+        height: 465px;
+      }
+    }
+  }
+  .unslider-nav{
+    ol{
+      text-align: center;
+      margin-top: 40px;
+      li{
+        width: 8px;
+        height: 8px;
+        border-radius: 8px;
+        border: 1px solid #fff;
+        text-indent: -9999px;
+        display: inline-block;
+        margin: 0 10px;
+        cursor: pointer;
+        &:hover{
+          background: #fff;
+        }
+      }
+    }
+    .unslider-active{
+      background: #fff;
+    }
+  }
+  .unslider-arrow{
+    display: none;
+  }
+  .my-slider2{
+    ul{
+      li{
+        @include flexbox;
+        @include justify-content(space-between);
+        .col{
+          width: 303px;
+          height: 100%;
+          background: #fff;
+          border-radius: 5px;
+          img{
+            margin: 34px auto 10px;
+            display: block;
+          }
+          h4{
+            color:#FD4497;
+            font-family: $oliver;
+            text-align: center;
+            font-size: 28px;
+            margin: 5px 0;
+          }
+          p{
+            color:#8F8F8F;
+            padding: 5px 15px;
+          }
+          a{
+            display: block;
+            width: 182px;
+            height: 43px;
+            border: 1px solid #FE03BD;
+            text-align: center;
+            margin: auto;
+            text-decoration: none;
+            line-height: 43px;
+            color: #FE03BD;
+            font-weight: 800;
+            border-radius: 25px;
+            font-size: 18px;
+            @include tran(300ms)
+            &:hover{
+              background: #FE03BD;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// =============================================== section 05 ====================================
+
+.sec05{
+  height: 650px;
+  width: 100%;
+  h4{
+    font-family: $oliver;
+    font-size: 50px;
+    color: #31DDF3;
+    text-align: center;
+    margin: 150px 0 50px;
+  }
+  .comillas{
+    width: 105px;
+    height: 89px;
+    margin:  40px auto;
+    background: url(../img/comillas.svg);
+  }
+  .wrapSlide3{
+    width: 900px;
+    height: 345px;
+    margin: auto;
+
+    .unslider-arrow{
+      display: none;
+    }
+    .unslider{
+      ul{
+        li{
+          p{
+            font-family: $open;
+            color:#828282;
+            font-size: 23px;
+            text-align: center;
+            margin: 20px 0;
+          }
+          .w50{
+            width: 50%;
+            float: left;
+            img{
+              float: right;
+            }
+            h5,h6{
+              font-family: $open;
+              padding-left: 20px;
+
+            }
+            h5{
+              font-size: 20px;
+              color: #585858;
+              margin: 20px 0 10px;
+            }
+            h6{
+              font-size: 16px;
+              color: #9C9C9C;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+    .unslider-nav{
+      ol{
+        text-align: center;
+        margin: 20px 0;
+        li{
+          text-indent: -9999px;
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          border-radius: 10px;
+          border: 1px solid #555;
+          cursor: pointer;
+          margin: 30px 10px;
+          &:hover{
+            background: #555;
+          }
+        }
+      }
+      .unslider-active{
+        background: #555;
+      }
+    }
+
+  }
+}
+// =============================================== section 06 ====================================
+.sec06{
+  width: 1440px;
+  height: 705px;
+  background: url(../img/bgSec06.png);
+  background-position: center;
+  float: left;
+  .wrapSec06{
+    width: 900px;
+    height: 580px;
+    margin: 125px auto 0;
+    h6{
+      font-size: 40px;
+      font-family: $open;
+      color: #fff;
+      span{
+        color:#10FE97;
+      }
+    }
+    input{
+      background: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      width: 345px;
+      border-bottom: 2px solid #fff;
+      height: 45px;
+      margin-bottom: 50px;
+      font-size: 40px;
+      font-family: $open;
+      font-weight: 100;
+       color: rgba(255, 255, 255, .6);
+      &:focus{
+        outline: none;
+      }
+    }
+    a{
+      display: block;
+      width: 225px;
+      height: 65px;
+      border: 4px solid #11FD97;
+      border-radius: 40px;
+      text-align: center;
+      text-decoration: none;
+      color: #11FD97;
+      font-family: $open;
+      font-size: 25px;
+      line-height: 60px;
+      @include tran(300ms);
+      &:hover{
+        background: #11FD97;
+        color: #fff;
+      }
+    }
+  }
+}
+
+::-webkit-input-placeholder {
+   color: rgba(255, 255, 255, .6);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: rgba(255, 255, 255, .6);
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba(255, 255, 255, .6);
+}
+
+:-ms-input-placeholder {
+   color: rgba(255, 255, 255, .6);
+}
+// ==================================== footer =======================
+footer{
+  background: #474747;
+  width: 1440px;
+  height: 100px;
+  float: left;
+  position: relative;
+  ul{
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    li{
+      display: inline-block;
+      color: #F44F70;
+      margin: 0 10px;
+      cursor: pointer;
+      &:hover{
+        color: #fff;
+      }
+    }
+  }
+  p{
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+  }
+  .upFoot{
+    width: 100%;
+    height: 50px;
+
+
+
+    -webkit-transform: rotate(-1.5deg);
+    -moz-transform: rotate(-1.5deg);
+    -ms-transform: rotate(-1.5deg);
+    -o-transform: rotate(-1.5deg);
+      transform: rotate(-1.5deg);
+
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -ms-transform-origin: left;
+    -o-transform-origin: left;
+     transform-origin:left;
+
+    background:#474747;
+    position: absolute;
+    top: -10px;
+  }
+}

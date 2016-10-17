@@ -1,0 +1,164 @@
+// out: style.css
+//main: style.less
+
+
+
+/*   diseñado y maquetado por andres gonzalez    email: miroenlared@gmail.com*/
+
+
+
+/* ======================= fuentes ==================*/
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
+
+
+@roboto: 'Roboto', sans-serif;
+
+
+header{
+	width: 100%;
+	height: 300px;
+	background: url(../img/header.jpg);
+	background-position: center bottom;;
+	background-size: 100%;
+	.logo{
+		width: 153px;
+		height: 83px;
+		background: url(../img/logo.png);
+		clear: both;
+		margin: 15% auto 0;
+	}
+
+}
+
+nav{
+	float: right;
+	margin-right: 10% !important;
+	margin-top: 2%;
+	a{
+		display: block;
+		color: #fff;
+		text-decoration: none;
+		float: left;
+		margin: 5px 10px;
+		font-family: @roboto;
+		font-weight: 300;
+		vertical-align: middle;
+		padding: 5px 10px;
+		-webkit-transition: all 300ms ease;
+		-moz-transition: all 300ms ease;
+		-ms-transition: all 300ms ease;
+		-o-transition: all 300ms ease;
+		transition: all 300ms ease;
+		&:hover{
+			text-decoration: underline;
+		}
+		&:nth-child(1){
+			padding: 5px 10px;
+			border: 1px solid #fff;
+			border-radius: 15px;
+		}
+	}
+
+}
+/* ========================== section ========================== */
+
+section{
+	width: 570px;
+	min-height: 300px;
+	margin:20px  auto  30px  !important;
+	h1{
+		text-align: center;
+		font-family: @roboto;
+		color: #000;
+		font-size: 69px;
+		font-weight: 400;
+		margin-top: 20px;
+		span{
+			font-size: 30px;
+			font-weight: 300;
+			display: block;
+		}
+	}
+	.col{
+		width: 50%;
+		float: left;
+		margin-top: 50px;
+		p{
+			font-family: @roboto;
+			font-size: 18px;
+			font-weight: 300;
+			padding-right: 20px;
+		}
+		input{
+			width: 100%;
+			display: block;
+			font-family: @roboto;
+			height: 41px;
+			margin-bottom: 10px;
+			font-size: 16px;
+			padding: 0 5px;
+			&:focus{
+				outline: none;
+			}
+		}
+		.send{
+			height: 41px;
+			width: 105%;
+			color: #fff;
+			text-align: center;
+			border: none;
+			font-size: 18px;
+			cursor: pointer;
+			background: rgb(110,168,204); /* Old browsers */
+			background: -moz-linear-gradient(top,  rgba(110,168,204,1) 0%, rgba(30,87,153,1) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  rgba(110,168,204,1) 0%,rgba(30,87,153,1) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  rgba(110,168,204,1) 0%,rgba(30,87,153,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ea8cc', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
+			-webkit-transition: all 300ms ease;
+			-moz-transition: all 300ms ease;
+			-ms-transition: all 300ms ease;
+			-o-transition: all 300ms ease;
+			transition: all 300ms ease;
+			&:hover{
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+
+::-webkit-input-placeholder {
+   font-family: @roboto;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-family: @roboto;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-family: @roboto;
+}
+
+:-ms-input-placeholder {
+   font-family: @roboto;
+}
+
+
+/* ========================== footer ========================== */
+footer{
+	width: 100%;
+	height: 30px;
+	background: #0077b3;
+	clear: both;
+	position: fixed;
+	bottom: 0;
+	p{
+		font-family: @roboto;
+		font-size: 16px;
+		text-align: center;
+		color: #fff;
+		line-height: 30px;
+	}
+}
