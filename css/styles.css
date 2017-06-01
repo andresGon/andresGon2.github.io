@@ -2944,7 +2944,7 @@ header {
 .cont01 {
   width: 100%;
   overflow: hidden;
-  height: 800px;
+  height: 800px !important;
   background: url(../img/bg-home.png);
   color: #FFFFFF;
   background-repeat: no-repeat;
