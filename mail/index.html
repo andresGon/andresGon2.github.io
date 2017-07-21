@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Super administrador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="front-content">
+      <img class="flag-col" src="images/bandera.png">
+      <h1>Solicitud de administración portal de Gobierno Digital</h1>
+
+
+      <form  class="">
+          <label>Para poder gestionar la solicitud del portal diligencia esta información</label>
+          <div>
+              <label>Nombre del representante legal</label>
+              <input name="name" required="" maxlength="200" minlength="5" type="text">
+          </div>
+          <div>
+              <label>Email</label>
+              <input name="email" required="" maxlength="200" type="email" class="">
+
+          </div>
+          <div>
+              <label>Telefóno de contacto</label>
+              <input  name="phone" required="" maxlength="15" type="text" class="">
+          </div>
+          <div>
+              <label>Cargo</label>
+              <input  name="position" required="" type="text" class="">
+          </div>
+
+          <div>
+              <label>Nombre de la entidad</label>
+              <select required=""  name="siteId"  class="">
+                <option value="" class="" selected="selected">Selecciona uno</option></select>
+              <label class="fz12">
+                  Si tu entidad no se encuentra disponible, contáctate al correo<br>
+                  soporte@mintic.gov.co,  a la línea gratuita 018000910742, o en bogotá a la línea 3907951
+              </label>
+              <br>
+          </div>
+          <label>Adjunta los documentos (Peso máximo 10 Mb)</label>
+          <ul>
+
+              <li>
+                  Acta de posesión
+              </li>
+              <div class="file-add">
+                  <i class="icon-mas"></i>
+                  <span>Subir</span>
+                  <input type="file" nosune-superadmin-upload="" multiple="" data-obj="siteRequest.model" data-reg="\.(doc|docx|pdf|gif|jpg|jpeg|tiff|png|bmp)$">
+                  <br>
+              </div>
+          </ul>
+
+          <input  name="files" required="" type="hidden" autocomplete="off" class="">
+
+
+          <br>
+          <div id="my-captcha" class="my-captcha">
+
+          <div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?k=6LdVXhcUAAAAAH8Atupv0MBp39lWW-KzKOoM1S7c&amp;co=aHR0cDovL251ay5jbzo4MDgx&amp;hl=es&amp;v=r20170717162708&amp;size=normal&amp;cb=dyirohgbw1bs" title="widget del recaptcha" width="304" height="78" frameborder="0" scrolling="no" sandbox="allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>
+
+
+          <a href="/terminos-condiciones" target="_blank" class="btn-terms">Ver Términos y condiciones</a>
+
+          <p class="txt-legal">
+              <input id="oath" type="checkbox"  name="oath" required="" value="true" class="">
+
+              La presente solicitud la realizo bajo la gravedad de juramento,
+              en concordancia con el artículo 83 de la Constitución Nacional,
+              motivo por el cual certifico que todos los documentos a este
+              adjunto son verídicos en la información que ellos contienen y
+              por tanto me hago responsable de la información aquí suministrada
+              y del uso del sistema que las personas autorizadas realicen,
+              de acuerdo con lo contemplado en la ley y en los términos y condiciones de uso.
+
+              <br>
+
+          </p>
+
+          <button class="btn-save" type="submit">Enviar</button>
+      </form>
+
+      <img src="images/footer.png" alt="" class="foot-img">
+
+
+  </div>
+
+</body>
+</html>
